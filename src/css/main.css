@@ -1,0 +1,63 @@
+/* start variable */
+
+/* end variable */
+/* start component */
+.btn {
+    background-color: #1f82ab; /* Sets background color of buttons */
+    border: 1px solid #0f4155; /* Adds a border to the buttons */
+    border-radius: 5px; /* Rounds the corners of the buttons */
+    padding: 5px 10px; /* Adds padding to the buttons */
+    margin: 5px 10px; /* Adds margin between buttons */
+    font-size: 16px; /* Sets font size of button text */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-transform: capitalize;
+    color: #e2e8ea;
+    flex-basis: 20%;
+}
+
+/* end componenet */
+
+.box {
+    width: 70%;
+    height: calc(100vh - 25px);
+    background: #eee;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Evenly distributes buttons */
+    flex-wrap: wrap;
+    /* margin: 50px auto; Adds margin around the button container */
+    width: 100%; /* Sets width of the button container to 50% */
+}
+
+.video-container {
+    width: 100%;
+    background: #000;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+/* start media query */
+@media only screen and (max-width: 1324px) {
+    .box {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    /* .button-container {
+    } */
+    .btn {
+        flex-basis: 18%;
+    }
+}
+/* end media query */

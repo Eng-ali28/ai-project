@@ -18,6 +18,12 @@ To build for development
   pnpm dev
 ```
 
+Start development project
+
+```bash
+  http://localhost:3000
+```
+
 To build for production
 
 ```bash

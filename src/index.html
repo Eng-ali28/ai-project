@@ -31,37 +31,40 @@
                 >
                     Cancel
                 </div>
-                <form class="form-model">
+                <div class="form-model">
                     <input
                         type="number"
                         min="0"
                         class="input dst1"
                         name="dst1"
+                        id="dst1"
                         placeholder="Enter first distance"
                     />
                     <input
                         type="number"
                         min="0"
                         class="input dst2"
-                        id="dst2"
                         name="dst2"
+                        id="dst2"
                         placeholder="Enter second distance"
                     />
                     <div class="form-model-btn">
                         <input
-                            type="reset"
+                            type="button"
                             name="reset"
+                            id="reset-dst"
                             value="Reset"
                             class="btn btn-reset"
                         />
                         <input
-                            type="submit"
+                            type="button"
                             name="edit"
                             value="Edit"
+                            id="edit-dst"
                             class="btn btn-edit"
                         />
                     </div>
-                </form>
+                </div>
             </div>
             <div class="box-model box-model-path" id="box-model-path">
                 <div
@@ -70,28 +73,28 @@
                 >
                     Cancel
                 </div>
-                <form class="form-model">
-                    <input
-                        type="text"
-                        class="input path"
-                        name="path"
-                        placeholder="Enter first distance"
-                    />
+                <div class="form-model">
+                    <select id="my-dropdown">
+                        <option value="video1.mp4">video1</option>
+                        <option value="video2.mp4">video2</option>
+                    </select>
                     <div class="form-model-btn">
                         <input
-                            type="reset"
+                            type="button"
                             name="reset"
                             value="Reset"
+                            id="restet-video-path"
                             class="btn btn-reset"
                         />
                         <input
-                            type="submit"
+                            type="button"
                             name="edit"
                             value="Edit"
+                            id="video-path"
                             class="btn btn-edit"
                         />
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </body>
